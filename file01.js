@@ -33,7 +33,7 @@ function getPoints(n, radius, centerX, centerY) {
     });
 
     // Draw thread lines
-    ctx.strokeStyle = "#00FFDE;
+    ctx.strokeStyle = "#00FFDE";
     ctx.lineWidth = 0.5;
     for (let i = 0; i < totalPoints; i++) {
       const j = Math.floor((i * multiplier) % totalPoints);
