@@ -25,7 +25,7 @@ function getPoints(n, radius, centerX, centerY) {
 
     // Draw points around the circle
     const points = getPoints(totalPoints, r, cx, cy);
-    ctx.fillStyle = "#FFF338"; // Orange dots
+    ctx.fillStyle = "#FFF338";
     points.forEach(p => {
       ctx.beginPath();
       ctx.arc(p.x, p.y, 2, 0, 2 * Math.PI);
@@ -33,7 +33,7 @@ function getPoints(n, radius, centerX, centerY) {
     });
 
     // Draw thread lines
-    ctx.strokeStyle = "#00FFDE"; // Light thread color
+    ctx.strokeStyle = "#00FFDE;
     ctx.lineWidth = 0.5;
     for (let i = 0; i < totalPoints; i++) {
       const j = Math.floor((i * multiplier) % totalPoints);
